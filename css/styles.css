@@ -1,5 +1,117 @@
 /* Your Website Styles */
 
+/* Global Styling*/
+body {
+  background-color: #e0ece8;
+  background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png);
+}
+
+.container {
+  background-color: rgba(81, 81, 81, 0.65);
+  width: 1100px;
+  margin-top: 49px;
+  padding-left: 20px;
+}
+
+/* Title */
+h1{
+  font-size: 40px;
+  color: rgba(225,155,129,0.9);
+  margin-top: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 40px;
+}
+
+/* Primary, Secondary Header */
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(223, 191, 180);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Navigation*/
+nav {
+  background-color: rgb(81, 81, 81);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 1.25em;
+}
+
+nav select {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  nav ul {
+    display: none;
+  }
+
+  nav select {
+    display: inline-block;
+    float: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Body Text */
+p {
+  font-size: 12px;
+  color: rgba(250, 243, 225, 0.9);
+  font-family: 'Droid Serif', serif;
+  line-height: 23px;
+}
+
+/* Links */
+a {
+  color: rgba(250, 243, 225, 0.9);
+  font-family: 'Droid Serif', serif;
+  line-height: 23px;
+}
+
+p a {
+  font-size: 12px;
+}
+
+a:link,
+a:visited {
+  color: rgba(250, 243, 225, 0.9);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgba(225,155,129,0.9);
+}
+
+/* Set Your Own Margin & Padding */
+h2, h3, p {
+  margin: 20px;
+}
 
 
 /* Gallery Stying */
