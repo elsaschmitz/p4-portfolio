@@ -3,99 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <title>Your Website</title>
-	
- <link rel="icon" href="favicon.ico">	
+    
+ <link rel="icon" href="favicon.ico">   
  
-  <link rel="stylesheet" href="css/normalize.css">				
-  <link rel="stylesheet" href="css/gallery.css">	 
+  <link rel="stylesheet" href="css/normalize.css">              
+  <link rel="stylesheet" href="css/gallery.css">     
   <link rel="stylesheet" href="css/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width">
-	
+    
 </head>
 <body>
+    
+    <nav> 
 
-	<div class="container">
-		
-		<!-- Your Content -->
-		<nav> 
+        <ul> 
+        <li><a href="http://elsaschmitz.github.io" class="active">Home</a></li> 
+        <li><a href="http://elsaschmitz.github.io/p1-bio">About</a></li> 
+        <li><a href="http://elsaschmitz.github.io/p2-resume">Resume</a></li> 
+        <li><a href="http://elsaschmitz.github.io/p4-portfolio">Portfolio</a></li> 
+        </ul> 
 
-			  <ul> 
-			    <li><a href="#" class="active">Home</a></li> 
-			    <li><a href="#">About</a></li> 
-			    <li><a href="#">Resume</a></li> 
-			    <li><a href="#">Portfolio</a></li> 
-			  </ul> 
-			  
-			  <select> 
-			    <option value="" selected="selected">Go to...</option> 
-			    
-			    <option value="#">Home</option> 
-			    <option value="#">About</option> 
-			    <option value="#">Resume</option> 
-			    <option value="#">Portfolio</option> 
-			  </select> 
+        <select> 
+        <option value="" selected="selected">Go to...</option> 
 
-			</nav>
-		
-		<div id="content-slider">
-    	<div id="slider">
-        	<div id="mask">
-            <ul>
-           	<li id="first" class="firstanimation">
-            <a href="#">
-            <img src="images/img_1.jpg" alt="Cougar"/>
-            </a>
-            <div class="tooltip">
-            <h1>Cougar</h1>
-            </div>
+        <option value="http://elsaschmitz.github.io">Home</option> 
+        <option value="http://elsaschmitz.github.io/p1-bio">About</option> 
+        <option value="http://elsaschmitz.github.io/p2-resume">Resume</option> 
+        <option value="http://elsaschmitz.github.io/p4-portfolio">Portfolio</option> 
+        </select> 
+
+    </nav>
+
+    <div class="container">
+        
+        <!-- Your Content -->
+        <h1>Works Portfolio</h1>
+
+        <ul class="gallery">
+            <li>
+                <img src="img/1-thumb.jpg"/>
             </li>
 
-            <li id="second" class="secondanimation">
-            <a href="#">
-            <img src="images/img_2.jpg" alt="Lions"/>
-            </a>
-            <div class="tooltip">
-            <h1>Lions</h1>
-            </div>
+            <li>
+                <img src="img/2-thumb.jpg"/>
             </li>
-            
-            <li id="third" class="thirdanimation">
-            <a href="#">
-            <img src="images/img_3.jpg" alt="Snowalker"/>
-            </a>
-            <div class="tooltip">
-            <h1>Snowalker</h1>
-            </div>
-            </li>
-                        
-            <li id="fourth" class="fourthanimation">
-            <a href="#">
-            <img src="images/img_4.jpg" alt="Howling"/>
-            </a>
-            <div class="tooltip">
-            <h1>Howling</h1>
-            </div>
-            </li>
-                        
-            <li id="fifth" class="fifthanimation">
-            <a href="#">
-            <img src="images/img_5.jpg" alt="Sunbathing"/>
-            </a>
-            <div class="tooltip">
-            <h1>Sunbathing</h1>
-            </div>
-            </li>
-            </ul>
-            </div>
-        </div>
 
-		<!-- Clearfix -->
-		<div class="clear"></div>
+            <li>
+                <img src="img/3-thumb.jpg"/>
+            </li>
 
-	</div>
-	
+  
+            <li class="presenter">
+                <img src="img/1.jpg"/>
+                <img src="img/2.jpg"/>
+                <img src="img/3.jpg"/>
+            </li>
+
+        </ul>
+    </div>
+
+        <!-- Clearfix -->
+        <div class="clear"></div>
+
+    </div>
+    
   
 </body>
 </html>

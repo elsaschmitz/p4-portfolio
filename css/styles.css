@@ -1,52 +1,145 @@
 /* Your Website Styles */
+body {
+  background-color: #e0ece8;
+  background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png);
+}
 
+.container {
+  background-color: rgba(81, 81, 81, 0.65);
+  width: 1100px;
+  height: 700px;
+  margin: 49px auto;
+  padding: 40px 0;
+}
 
+/* Title */
+h1{
+  font-size: 40px;
+  color: rgba(225,155,129,0.9);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(223, 191, 180);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Navigation*/
+nav {
+  background-color: rgb(81, 81, 81);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin: 0 10px;
+  
+}
+
+nav select {
+  display: none;
+  float: right;
+}
+
+@media screen and (max-width:340px) {
+  nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav select {
+    display: inline-block;
+  }
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+  line-height: 23px;
+  font-size: 12px;
+  color: rgba(250, 243, 225, 0.9);
+}
+
+li {
+  list-style: none;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: rgba(250, 243, 225, 0.9);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgba(225,155,129,0.9);
+}
+
+/* Set Your Own Margin & Padding */
+h2, h3, p {
+  margin: 20px;
+}
 
 /* Gallery Stying */
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  width: 100px;
 }
 
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+ul li img {
+  width: 100px;
 }
 
-/*
-  Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
-  position: relative;
-}
-.gallery .item {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-  background: #4d87e2;
-}
-.gallery .controls {
+.presenter {
   position: absolute;
-  bottom: -120px;
-  width: 100%;
-  text-align: center;
+  top: 200px;
+  right: 1080px;
+  margin-left: 100px;
 }
 
-.gallery .controls img {
-  border: 5px solid #000;
+.presenter img{
+  position: absolute;
+  width: 310px;
+  visibility: hidden;
 }
 
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  transition: color .1s;
+.gallery li:nth-child(1):hover ~ .presenter img:nth-child(1){
+  visibility: visible;
 }
 
+.gallery li:nth-child(2):hover ~ .presenter img:nth-child(2){
+  visibility: visible;
+}
 
-/* Show Grid */
-.showgrid {
-  background: url("../img/grid-bg.png") repeat-y;
+.gallery li:nth-child(3):hover ~ .presenter img:nth-child(3){
+  visibility: visible;
 }
