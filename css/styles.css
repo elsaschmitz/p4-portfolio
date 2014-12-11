@@ -1,259 +1,52 @@
 /* Your Website Styles */
 
-/* Global Styling*/
-body {
-  background-color: #e0ece8;
-  background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png);
+
+
+/* Gallery Stying */
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-.container {
-  background-color: rgba(81, 81, 81, 0.65);
-  width: 1100px;
-  margin: 55px auto 0 auto;
-  padding-left: 20px;
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* Title */
-h1{
-  font-size: 40px;
-  color: rgba(225,155,129,0.9);
-  margin-top: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: normal;
-  line-height: 23px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 40px;
+/*
+  Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
 }
-
-/* Primary, Secondary Header */
-h2,
-h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: rgb(223, 191, 180);
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-/* Navigation*/
-nav {
-  background-color: rgb(81, 81, 81);
-  position: fixed;
+.gallery .item {
+  height: 400px;
+  overflow: hidden;
   text-align: center;
-  top: 0;
-  left: 0;
+  background: #4d87e2;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: -120px;
   width: 100%;
+  text-align: center;
 }
 
-nav li {
+.gallery .controls img {
+  border: 5px solid #000;
+}
+
+.gallery .control-button {
   display: inline-block;
-  margin: 0 40px;
-  font-size: 1.25em;
-}
-
-nav select {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-
-  nav ul {
-    display: none;
-  }
-
-  nav select {
-    display: inline-block;
-    float: center;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-}
-
-/* Body Text */
-p {
-  font-size: 12px;
-  color: rgba(250, 243, 225, 0.9);
-  font-family: 'Droid Serif', serif;
-  line-height: 23px;
-}
-
-/* Links */
-a {
-  color: rgba(250, 243, 225, 0.9);
-  font-family: 'Droid Serif', serif;
-  line-height: 23px;
-}
-
-p a {
-  font-size: 12px;
-}
-
-a:link,
-a:visited {
-  color: rgba(250, 243, 225, 0.9);
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
   text-decoration: none;
-}
-
-a:hover,
-a:active {
-  color: rgba(225,155,129,0.9);
-}
-
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-  margin: 20px;
+  transition: color .1s;
 }
 
 
-/* Slider Styling */
-.content h1 {
-  font-size:48px;
-  color:#000;
-  text-shadow:0px 1px 1px #f4f4f4;
-  text-align:center;
-  padding:60px 0 30px;  
-}
-
-/* CONTENT SLIDER */
-#content-slider {
-  width:100%;
-  height:360px;
-  margin:10px auto 0;
-}
-/* SLIDER */
-#slider {
-  background:#000;
-  border:5px solid #eaeaea;
-  box-shadow:1px 1px 5px rgba(0,0,0,0.7);
-  height:320px;
-  width:680px;
-  margin:40px auto 0;
-  overflow:visible;
-}
-#mask {
-  overflow:hidden;
-  height:320px;
-}
-#slider ul {
-  margin:0;
-  padding:0;
-  position:relative;
-}
-#slider li {
-  width:680px;
-  height:320px;
-  position:absolute;
-  top:-325px;
-  list-style:none;
-}
-
-#slider li.firstanimation {
-  -webkit-animation:cycle 25s linear infinite;    
-}
-#slider li.secondanimation {
-  -webkit-animation:cycletwo 25s linear infinite;   
-}
-#slider li.thirdanimation {
-  -webkit-animation:cyclethree 25s linear infinite;   
-}
-#slider li.fourthanimation {
-  -webkit-animation:cyclefour 25s linear infinite;    
-}
-#slider li.fifthanimation {
-  -webkit-animation:cyclefive 25s linear infinite;    
-}
-
-#slider .tooltip {
-  background:rgba(0,0,0,0.7);
-  width:300px;
-  height:60px;
-  position:relative;
-  bottom:75px;
-  left:-320px;
-  -webkit-transition: all 0.3s ease-in-out;  
-}
-#slider .tooltip h1 {
-  color:#fff;
-  font-size:24px;
-  font-weight:300;
-  line-height:60px;
-  padding:0 0 0 20px;
-}
-#slider li#first:hover .tooltip, 
-#slider li#second:hover .tooltip, 
-#slider li#third:hover .tooltip, 
-#slider li#fourth:hover .tooltip, 
-#slider li#fifth:hover .tooltip {
-  left:0px;
-}
-#slider:hover li, {
-  -webkit-animation-play-state:paused;
-}
-
-@-webkit-keyframes cycle {
-  0%  { top:0px; }
-  4%  { top:0px; }
-  16% { top:0px; opacity:1; z-index:0; } 
-  20% { top:325px; opacity:0; z-index:0; }
-  21% { top:-325px; opacity:0; z-index:-1; }
-  50% { top:-325px; opacity:0; z-index:-1; }
-  92% { top:-325px; opacity:0; z-index:0; }
-  96% { top:-325px; opacity:0; }
-  100%{ top:0px; opacity:1; }
-  
-}
-@-webkit-keyframes cycletwo {
-  0%  { top:-325px; opacity:0; }
-  16% { top:-325px; opacity:0; }
-  20% { top:0px; opacity:1; }
-  24% { top:0px; opacity:1; } 
-  36% { top:0px; opacity:1; z-index:0; } 
-  40% { top:325px; opacity:0; z-index:0; }
-  41% { top:-325px; opacity:0; z-index:-1; }  
-  100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-webkit-keyframes cyclethree {
-  0%  { top:-325px; opacity:0; }
-  36% { top:-325px; opacity:0; }
-  40% { top:0px; opacity:1; }
-  44% { top:0px; opacity:1; } 
-  56% { top:0px; opacity:1; z-index:0; } 
-  60% { top:325px; opacity:0; z-index:0; } 
-  61% { top:-325px; opacity:0; z-index:-1; }
-  100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-webkit-keyframes cyclefour {
-  0%  { top:-325px; opacity:0; }
-  56% { top:-325px; opacity:0; }
-  60% { top:0px; opacity:1; }
-  64% { top:0px; opacity:1; }
-  76% { top:0px; opacity:1; z-index:0; }
-  80% { top:325px; opacity:0; z-index:0; }
-  81% { top:-325px; opacity:0; z-index:-1; }
-  100%{ top:-325px; opacity:0; z-index:-1; }
-}
-@-webkit-keyframes cyclefive {
-  0%  { top:-325px; opacity:0; }
-  76% { top:-325px; opacity:0; }
-  80% { top:0px; opacity:1; }
-  84% { top:0px; opacity:1; }
-  96% { top:0px; opacity:1; z-index:0; }
-  100%{ top:325px; opacity:0; z-index:0; }
-}
-
-@-webkit-keyframes fullexpand {
-    0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity:0; }
-    4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.3; }
-   16%, 36%, 56%, 76%, 96% { width:100%; opacity:0.7; }
-   17%, 37%, 57%, 77%, 97% { width:100%; opacity:0.3; }
-   18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; } 
+/* Show Grid */
+.showgrid {
+  background: url("../img/grid-bg.png") repeat-y;
 }
